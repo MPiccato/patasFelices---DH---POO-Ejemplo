@@ -38,7 +38,7 @@ def registrar_cliente():
 def registrar_producto():
     nombre = input('Nombre del producto: ')
     categoria = input('Categoria del producto:')
-    precio = input('Precio del producto:')
+    precio = float(input('Precio del producto:'))
     cantidad = int(input('Cantidad de productos:'))
     producto = Producto(nombre, categoria, precio, cantidad)
     return producto
